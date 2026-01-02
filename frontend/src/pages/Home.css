@@ -1,0 +1,50 @@
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.home-content h2 {
+  font-size: 1.5rem;
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.primary-btn {
+  padding: 12px 24px;
+  border: none;
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  padding: 12px 24px;
+  border: 2px solid #38bdf8;
+  background: transparent;
+  color: #38bdf8;
+  cursor: pointer;
+}
