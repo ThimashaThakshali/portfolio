@@ -9,7 +9,8 @@ function ProjectCard({
   tech,
   featured,
   details,
-  award
+  award,
+  link
 }) {
   const [open, setOpen] = useState(false);
 
@@ -31,6 +32,15 @@ function ProjectCard({
           <span key={index}>{t}</span>
         ))}
       </div>
+
+      <a
+        className="github-link"
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+      >
+        View on GitHub
+      </a>
 
       {details && (
         <button
@@ -67,8 +77,8 @@ function Projects() {
           title="Star Sentinel – Real-Time Wearable Multimodal Fear Detection System"
           year="2025"
           featured
-          award="Finalist – IEEE Sri Lanka Section FYP Arena 2025 (Undergraduate Project Competition)"
-          description="A real-time wearable safety system that automatically detects fear-related emotional states using multimodal physiological and speech signals captured from a smartwatch, enabling hands-free emergency alerting."
+          award="Finalist – IEEE Sri Lanka Section FYP Arena 2025"
+          description="A real-time wearable safety system that automatically detects fear-related emotional states using multimodal physiological and speech signals captured from a smartwatch."
           tech={[
             "Wear OS",
             "Kotlin",
@@ -77,99 +87,68 @@ function Projects() {
             "Signal Processing",
             "On-device ML"
           ]}
+          link="https://github.com/ThimashaThakshali/Star_Sentinel"
           details={
             <>
               <h4>Project Overview</h4>
               <p>
-                Star Sentinel is a real-time wearable safety application designed
-                to automatically detect fear-related emotional states using
-                physiological and speech-based signals captured from a smartwatch.
-                The system enhances personal safety by identifying distress
-                situations and triggering emergency alerts without requiring
-                manual user interaction.
+                Star Sentinel automatically detects fear-related emotional states
+                using smartwatch sensors, enhancing personal safety with automated
+                emergency alerts.
               </p>
-
-              <h4>Multimodal Detection Approach</h4>
+              <h4>Multimodal Detection</h4>
               <p>
-                The application continuously monitors heart rate signals and short
-                audio segments captured from the smartwatch microphone. Heart rate
-                variability features (Mean RR, RMSSD, SDNN) are fused with
-                speech-related audio features such as MFCCs, pitch, and intensity
-                variance to improve robustness in real-world environments.
+                Heart rate variability (Mean RR, RMSSD, SDNN) is fused with audio
+                features (MFCCs, pitch, intensity) to improve real-world robustness.
               </p>
-
-              <h4>Machine Learning & Deployment</h4>
+              <h4>ML & Deployment</h4>
               <p>
-                A lightweight neural network was trained offline using Python,
-                TensorFlow, and Keras, then converted to TensorFlow Lite for
-                deployment. All inference runs entirely on the smartwatch,
-                ensuring low latency, privacy preservation, and offline
-                operation without server dependency.
+                A lightweight neural network was trained with Python and TensorFlow,
+                converted to TensorFlow Lite, and deployed on Wear OS for on-device
+                inference with minimal latency and offline operation.
               </p>
-
               <h4>System Reliability</h4>
               <p>
-                To reduce false positives, rule-based detectors such as sudden
-                heart rate spikes and scream-like audio patterns are combined
-                with machine learning predictions. Temporal smoothing using
-                majority voting across recent predictions ensures stable and
-                reliable fear detection.
+                Rule-based detectors and temporal smoothing reduce false positives
+                before triggering alerts.
               </p>
-
               <h4>Alerts & Evaluation</h4>
               <p>
-                Upon confirmed fear detection, the system automatically sends
-                emergency alerts and shares real-time location with predefined
-                contacts. The system was evaluated through controlled
-                human-subject testing using fear-inducing stimuli, demonstrating
-                accurate detection with low inference latency on wearable
-                hardware.
+                On fear detection, emergency alerts with live location are sent to
+                predefined contacts. Controlled testing validated accuracy and low
+                latency.
               </p>
-
-              <h4>Key Highlights</h4>
+              <h4>Highlights</h4>
               <ul>
-                <li>Fully on-device fear detection with no backend dependency</li>
-                <li>Multimodal fusion of physiological and speech features</li>
-                <li>Low-latency inference suitable for wearable devices</li>
-                <li>Privacy-preserving, offline-first design</li>
-                <li>Automatic real-time emergency alerting</li>
+                <li>Fully on-device detection, no servers required</li>
+                <li>Multimodal physiological and speech analysis</li>
+                <li>Privacy-preserving offline design</li>
+                <li>Automatic emergency alerting</li>
               </ul>
             </>
           }
-        />
-
-        {/* CONCURRENT BANKING SYSTEM */}
-        <ProjectCard
-          title="Concurrent Banking System"
-          year="2025"
-          description="A Java-based concurrent banking system supporting secure money transfers with transaction consistency, thread safety, and deadlock prevention."
-          tech={[
-            "Java",
-            "Concurrency",
-            "OOP",
-            "IntelliJ IDEA"
-          ]}
         />
 
         {/* SMART PRIVACY */}
         <ProjectCard
           title="Smart Privacy – Encrypted Health Data System"
           year="2025"
-          description="A privacy-focused health data platform that anonymizes users using system-generated IDs and encrypts sensitive personal data, enabling secure storage and controlled access."
+          description="A privacy-focused health data platform that anonymizes users using system IDs and encrypts sensitive data, enabling secure storage and controlled access."
           tech={[
             "Python",
             "Flask",
             "MongoDB",
             "Encryption",
-            "Role-Based Access Control"
+            "Role-Based Access"
           ]}
+          link="https://github.com/ThimashaThakshali/smart_privacy_project"
         />
 
-        {/* DEEPSENSE */}
+        {/* Deepsense */}
         <ProjectCard
           title="Deepsense – Suicidal Text Detection Application"
           year="2023"
-          description="An Android application that detects suicidal ideation from text using supervised learning models, integrating a Kotlin-based mobile frontend with Python-based model inference."
+          description="An Android application that detects suicidal ideation from text using supervised learning models."
           tech={[
             "Kotlin",
             "Python",
@@ -177,27 +156,29 @@ function Projects() {
             "SQL",
             "Android Studio"
           ]}
+          link="https://github.com/ThimashaThakshali/DeepSense"
         />
 
-        {/* SERENETREK LK */}
+        {/* SereneTrek LK */}
         <ProjectCard
           title="SereneTrek LK – Offline-First Sustainable Tourism Platform"
           year="2025"
-          description="An offline-first digital tourism platform connecting travelers with verified rural hosts, featuring offline GPS navigation, sustainability scoring, and SMS-based SOS alerts. MVP developed within 18 hours."
+          description="An offline-first tourism platform connecting travelers with rural hosts, featuring offline GPS navigation, sustainability scoring, and SMS-based SOS alerts."
           tech={[
             "React Native",
             "Mapbox",
             "Offline GPS",
-            "SMS-based SOS",
-            "Sustainability Scoring"
+            "SMS SOS",
+            "Marketplace"
           ]}
+          link="https://github.com/ThimashaThakshali/sereneTrek"
         />
 
-        {/* EMBIGGEN VIEWER */}
+        {/* Embiggen Viewer */}
         <ProjectCard
           title="Embiggen Viewer – Satellite Imagery Exploration Tool"
           year="2024"
-          description="A lightweight web application for exploring high-resolution Earth and space imagery using public satellite data, designed to educate users on different spectral observation modes."
+          description="A lightweight web app visualizing high-resolution Earth and space imagery using public satellite data."
           tech={[
             "HTML",
             "CSS",
@@ -205,6 +186,7 @@ function Projects() {
             "Leaflet.js",
             "NASA GIBS"
           ]}
+          link="https://github.com/ThimashaThakshali/embiggen-viewer"
         />
 
       </div>
