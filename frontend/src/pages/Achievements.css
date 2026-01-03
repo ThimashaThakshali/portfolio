@@ -1,0 +1,37 @@
+.achievements {
+  min-height: 100vh;
+  background: #020617;
+  color: white;
+  padding: 80px 40px;
+}
+
+.achievements h2 {
+  text-align: center;
+  color: #38bdf8;
+  margin-bottom: 50px;
+}
+
+.achievement-section {
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.achievement-section h3 {
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+.achievement-section ul {
+  padding-left: 20px;
+}
+
+.achievement-section li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+@media (max-width: 768px) {
+  .achievements {
+    padding: 60px 20px;
+  }
+}
