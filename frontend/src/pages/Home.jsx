@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 function Home() {
@@ -41,21 +42,32 @@ function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.9 }}
         >
-          <motion.button
-            className="primary-btn"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            View Projects
-          </motion.button>
+          {/* VIEW PROJECTS */}
+          <Link to="/projects">
+            <motion.button
+              className="primary-btn"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              View Projects
+            </motion.button>
+          </Link>
 
-          <motion.button
-            className="secondary-btn"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          {/* DOWNLOAD CV */}
+          <a
+            href="/Thimasha_Thakshali_CV.pdf"
+            download
+            target="_blank"
+            rel="noreferrer"
           >
-            Download CV
-          </motion.button>
+            <motion.button
+              className="secondary-btn"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Download CV
+            </motion.button>
+          </a>
         </motion.div>
       </motion.div>
     </section>

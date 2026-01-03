@@ -8,6 +8,7 @@ import Experience from "./pages/Experience";
 import Achievements from "./pages/Achievements";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
+       <Footer />
     </BrowserRouter>
   );
 }

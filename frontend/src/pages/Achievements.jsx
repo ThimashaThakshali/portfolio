@@ -46,7 +46,7 @@ function Achievements() {
           "PrologueX (2023) – 3rd Place",
           "Algothon (2025) – 5th Place",
           "AdaptIQ (2025) – Finalist",
-          "SLIIT Xtreme 4.0 (2025) – Finalist",
+          "SLIITXtreme 4.0 (2025) – Finalist",
           "Artemia (2025) – Finalist",
           "Haxpedition – Mini Hackathon (2024) – 1st Place",
           "IEEEXtreme 18.0 (2024) – 5th in IIT, 52nd Nationally, 674th Globally",
@@ -61,7 +61,10 @@ function Achievements() {
           "Software Engineer Intern – HackerRank",
           "Problem Solving (Basic) – HackerRank",
           "JavaScript (Basic) – HackerRank",
-          "React (Basic) – HackerRank"
+          "React (Basic) – HackerRank",
+          "Java (Basic) – HackerRank",
+          "Python (Basic) – HackerRank",
+          "SQL (Basic) – HackerRank",
         ]}
       />
 
@@ -70,6 +73,7 @@ function Achievements() {
         title="Leadership"
         items={[
           "Team Leader – AdaptIQ (Rising Tech Dragons, 2025)",
+          "Team Leader – SLIITXtreme 4.0 (Rising Tech Dragons, 2025)",
           "Team Leader – Algothon (Rising Tech Dragons, 2025)",
           "Team Leader – Operational Research and Optimization Coursework (2025)",
           "Group Leader – Web Design and Development Coursework (2022)",
