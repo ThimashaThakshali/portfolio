@@ -1,62 +1,62 @@
+/* ===== FIXED NAVBAR ===== */
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   background: #020617;
   color: white;
   display: flex;
   align-items: center;
-  padding: 15px 20px;
+  padding: 14px 18px;
   z-index: 1000;
   box-sizing: border-box;
 }
 
+/* ===== LOGO ===== */
 .logo {
   color: #38bdf8;
-  font-size: 1.2rem;
-  margin-right: 20%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-right: 20px;
   white-space: nowrap;
 }
 
-/* NAV LINKS CONTAINER */
+/* ===== NAV LINKS CONTAINER ===== */
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 18px;
+  gap: 16px;
   margin: 0;
   padding: 0;
+
+  /* Critical fixes */
+  overflow-x: auto;
+  white-space: nowrap;
   flex: 1;
+
+  /* Hide scrollbar */
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE / Edge */
 }
 
-/* Hide scrollbar (Chrome, Edge, Safari) */
 .navbar ul::-webkit-scrollbar {
-  display: none;
+  display: none;               /* Chrome / Safari */
 }
 
+/* ===== NAV ITEM ===== */
 .navbar li {
   white-space: nowrap;
 }
 
+/* ===== NAV LINK ===== */
 .navbar a {
   color: white;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
+  transition: color 0.2s ease;
 }
 
 .navbar a:hover {
   color: #38bdf8;
-}
-@media (max-width: 600px) {
-  .navbar {
-    padding: 10px 15px;
-  }
-
-  .logo {
-    font-size: 1rem;
-    margin-right: 15px;
-  }
-
-  .navbar a {
-    font-size: 0.9rem;
-  }
 }
