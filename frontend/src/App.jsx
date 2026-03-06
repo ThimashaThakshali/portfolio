@@ -1,32 +1,30 @@
-import { HashRouter , Routes, Route } from "react-router-dom";
-
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Skills from "./pages/Skills";
-import Projects from "./pages/Projects";
-import Experience from "./pages/Experience";
-import Achievements from "./pages/Achievements";
-import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Achievements from "./components/Achievements";
+import Contact from "./components/Contact";
+import Chatbot from "./components/Chatbot";
 import Footer from "./components/Footer";
+
+
 
 function App() {
   return (
-    <HashRouter>
+    <div className="bg-[#06061a] text-white">
       <Navbar />
-      <main style={{ paddingTop: "80px" }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/achievements" element={<Achievements />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </main>
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      <Projects />
+      <Achievements />
+      <Contact />
+      <Chatbot />
        <Footer />
-    </HashRouter>
+    </div>
   );
 }
 
