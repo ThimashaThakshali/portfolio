@@ -88,7 +88,7 @@ const projects = [
   {
     id: 5,
     title: "Embiggen Viewer",
-    subtitle: "Satellite Imagery Exploration Tool (2024)",
+    subtitle: "Satellite Imagery Exploration Tool (2025)",
     icon: ImageIcon,
     color: "#a78bfa",
     gradient: "linear-gradient(135deg, #a78bfa20, #7c3aed15)",
