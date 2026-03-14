@@ -8,6 +8,7 @@ import {
   Brain,
   Compass,
   Image as ImageIcon,
+  CloudSun,
 } from "lucide-react";
 
 const projects = [
@@ -99,6 +100,28 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript", "Leaflet.js", "NASA GIBS"],
     github: "https://github.com/ThimashaThakshali/embiggen-viewer",
     demo: "https://github.com/ThimashaThakshali/embiggen-viewer",
+  },
+  {
+    id: 6,
+    title: "City Weather App",
+    subtitle: "React Weather Dashboard (2024)",
+    icon: CloudSun,
+    color: "#06b6d4",
+    gradient: "linear-gradient(135deg, #06b6d420, #0891b215)",
+    category: "Web Application",
+    status: "Completed",
+    description:
+      "A responsive weather dashboard built with React that allows users to view real-time weather information for multiple cities. The application integrates the OpenWeatherMap API, implements caching to reduce API calls, and provides detailed weather insights through an intuitive interface.",
+    tech: [
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "OpenWeatherMap API",
+      "Docker",
+    ],
+    github: "https://github.com/ThimashaThakshali/city-weather-app",
+    demo: "https://thimashathakshali.github.io/city-weather-app/",
   },
 ];
 
