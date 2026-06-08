@@ -21,7 +21,7 @@ const experiences = [
     type: "work",
     color: "#7c3aed",
     description:
-      "Developing and enhancing enterprise applications across two parallel projects. Working with the Agile Labs Axpert platform and contributing to UI/UX and full-stack UI development using HTML, CSS, and React. Supporting integrations and testing activities.",
+      "Developed and enhanced enterprise applications across two parallel projects. Worked with the Agile Labs Axpert platform and contributed to UI/UX and full-stack UI development using HTML, CSS, and React. Supported integrations and testing activities. ",
     tags: ["Axpert", "HTML", "CSS", "React", "Integrations", "Testing"],
   },
   {
