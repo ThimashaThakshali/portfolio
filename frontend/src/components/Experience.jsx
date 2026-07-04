@@ -9,7 +9,7 @@ const experiences = [
     type: "education",
     color: "#f59e0b",
     description:
-      "Conducting Client–Server Architecture (CSA) tutorials with short theory recaps, hands-on guidance, and support during lab sessions to clarify core architectural concepts.",
+      "Currently supervising undergraduate Final Year Projects (FYPs), providing technical guidance, reviewing project progress, and mentoring students throughout their projects.Conducted Client–Server Architecture (CSA) tutorials with short theory recaps, hands-on guidance, and supported during lab sessions to clarify core architectural concepts. ",
     tags: ["Client–Server Architecture", "Teaching", "Mentoring"],
   },
 
